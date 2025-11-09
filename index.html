@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECELL</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <div class="nav-inner">
+            <a href="#top" class="brand">
+                <img src="logo1.png" width="80">
+                <span>Noiré</span>
+            </a>
+
+            <!-- Navigtion links  -->
+            
+    
+            <nav class="nav-links">
+                
+                    <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+                    <a href="#categories"><i class="fa-solid fa-list"></i>Categories</a>
+                    <a href="#shop"><i class="fa-solid fa-store"></i>Shop</a>
+                    <a href="#cart"><i class="fa-solid fa-cart-plus"></i>Cart:<span id="cartItems">0</span></a>
+                    <a href="#contact"><i class="fa-solid fa-message"></i>Contact Us</a>
+                    
+            </nav>
+        </div>
+    </header>
+    <main id="top">
+        <!-- HERO -->
+        <section id="home" class="hero">
+            <div>
+                <h1>Discover Premium Collections</h1>
+                <p class="hero-info">Where elegance meets desire<br><a class="shopbtn" href="#categories"><button>Shop Now</button></a></p>
+                
+            </div>
+        </section>
+        <section id="categories">
+            <!-- CATEGORIES -->
+            <p class="kicker center">📦CATEGORIES</p>
+            <h3>Featured Products</h3>
+            <div class="grid">
+                <a href="#watch"><div class="grid-card">
+                    <img src="watch.jpg" width="300px" alt="">
+                    <h4>Luxury Watch</h4>
+                    
+                    <button class="cart">Shop Now</button>
+
+                </div></a>
+                <a href="#bag"><div class="grid-card">
+                    <img src="bag.jpg" width="300px" height="200px" alt="">
+                    <h4>Designer Bag</h4>
+                    
+                    <button class="cart">Shop Now</button>
+
+                </div></a>
+                <a href="#gold"><div class="grid-card">
+                    <img src="gold.jpg" width="300px" height="200px" alt="">
+                    <h4>Gold Bracelet</h4>
+                    
+                    <button class="cart">Shop Now</button>
+
+                </div></a>
+            </div>
+        </section>
+        <section id="shop">
+            <!-- WATCHES -->
+            <p class="kicker center">🛍️SHOP NOW</p>
+            
+            <h3 id="watch">WATCHES</h3>
+            <div  class="grid">
+                <div class="grid-card">
+                    <img src="new1.jpeg" width="300px" height="300px" alt="">
+                    <p class="grid-card-text">Men Omega Seamaster</p>
+                    <p class="grid-card-price" >₹4,18,027</p>
+                    <button class="cart" id="watch1" data-price="418027" data-product="Men Omega Seamaster" data-image="new1.jpeg">Add to Cart</button>
+
+                </div>
+                    
+                <div class="grid-card">
+                    <img src="new2.jpeg" width="300px" height="300px" alt="">
+                    <p class="grid-card-text">Rolex Submariner Date 41mm 126610ln</p>
+                    <p class="grid-card-price" >₹14,97,243</p>
+                    <button class="cart" id="watch2" data-price="1497243" data-product="Rolex Submariner Date 41mm 126610ln" data-image="new2.jpeg">Add to Cart</button>
+
+                </div>
+                    
+                <div class="grid-card">
+                    <img src="new3.jpeg" width="300px" height="300px" alt="">
+                    <p class="grid-card-text">Cartier Tank Must de Cartier Watch</p>
+                    <p class="grid-card-price" >₹3,87,000</p>
+                    <button class="cart" id="watch3" data-price="387000" data-product="Cartier Tank Must de Cartier Watch" data-image="new3.jpeg">Add to Cart</button>
+
+                </div>
+            </div>
+            
+            <!-- Designer Bags -->
+            <h3 id="bag"> Desginer Bags</h3>
+            <div  class="grid">
+                <div class="grid-card">
+                    <img src="bag1.jpeg" width="300px" height="300px" alt="">
+                    <p class="grid-card-text">Prada Galleria Satin Mini‑Bag with Crystals</p>
+                    <p class="grid-card-price" >₹4,67,600</p>
+                    <button class="cart" id="bag1" data-price="467600" data-product="Prada Galleria Satin Mini‑Bag with Crystals" data-image="bag1.jpeg">Add to Cart</button>
+
+                </div>
+                
+                <div class="grid-card">
+                    <img src="bag2.jpeg" width="300px" height="300px" alt="">
+                    <p class="grid-card-text">Louis Vuitton Neverfull MM Monogram</p>
+                    <p class="grid-card-price" >₹69,000</p>
+                    <button class="cart" id="bag2" data-price="69000" data-product="Louis Vuitton Neverfull MM Monogram" data-image="bag2.jpeg">Add to Cart</button>
+
+                </div>
+                
+                <div class="grid-card">
+                    <img src="bag3.jpeg" width="300px" height="300px" alt="">
+                    <p class="grid-card-text">Saint Laurent 5 À 7 shoulder bag women</p>
+                    <p class="grid-card-price">₹1,55,000</p>
+                    <button class="cart" id="bag3" data-price="155000" data-product="Saint Laurent 5 À 7 shoulder bag women" data-image="bag3.jpeg">Add to Cart</button>
+
+                </div>
+            </div>
+            <!-- Gold Bracelet -->
+            <h3 id="gold"> Gold Bracelet</h3>
+            <div  class="grid">
+                <div class="grid-card">
+                    <img src="gold1.jpeg" width="300px" height="300px" alt="">
+                    <p class="grid-card-text">Tanishq 22 Carat Gold Bracelet</p>
+                    <p class="grid-card-price">₹1,23,279</p>
+                    <button class="cart" id="gold1" data-price="123279" data-product="Tanishq 22 Carat Gold Bracelet" data-image="gold1.jpeg">Add to Cart</button>
+
+                </div>
+                
+                <div class="grid-card">
+                    <img src="gold2.jpeg" width="300px" height="300px" alt="">
+                    <p class="grid-card-text">P.C. Jewellers 22kt Yellow Gold Bird Bracelet</p>
+                    <p class="grid-card-price">₹62,946</p>
+                    <button class="cart" id="gold2" data-price="62946" data-product="P.C. Jewellers 22kt Yellow Gold Bird Bracelet" data-image="gold2.jpeg">Add to Cart</button>
+
+                </div>
+                
+                <div class="grid-card">
+                    <img src="gold3.jpeg" width="300px" height="300px" alt="">
+                    <p class="grid-card-text">GIVA Golden Supple Bracelet</p>
+                    <p class="grid-card-price">₹5,999</p>
+                    <button class="cart" id="gold3" data-price="5999" data-product="GIVA Golden Supple Bracelet" data-image="gold3.jpeg">Add to Cart</button>
+                </div>
+            </div>
+
+
+        </section>
+        <section id="cart">
+            <!-- Cart -->
+            <p class="kicker center">🛒Cart</p>
+            <ul><li class="billClass">Your Total Bill: <span id="bill">0</span><li class="itemsClass">Number of items:<span id="cartItems2">0</span></li></ul>
+            <ul id="cart-list"></ul>
+            <div class="buttons"><button id="clearCart">🗑️Clear Cart</button><button id="checkout">💳Checkout</button></div>
+            
+        </section>
+        <section id="contact">
+            <!-- Contact -->
+            <p class="kicker center">✉️Contact Us</p>
+            <div class="card">
+                    
+                <form id="contactForm">
+                        <label class="sr-only" for="name">Name</label>
+                        <input id="name" class="btn" style="width:100%; margin-bottom:10px" placeholder="Your name" required >
+                        <label class="sr-only" for="email">Email</label>
+                        <input id="email" type="email" class="btn" style="width:100%; margin-bottom:10px" placeholder="Email" required/>
+                        <label class="sr-only" for="msg">Message</label>
+                        <textarea id="msg" class="btn" style="width:100%; height:110px; resize:vertical" placeholder="Share your idea…" required></textarea>
+                        <div class="senddiv"><button class="send">Send</button></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="center">
+            <p class="small">© Noiré by <a href="https://www.instagram.com/ecell.nsut/?hl=en">eCell</a>. All Rights Reserved.</p>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
